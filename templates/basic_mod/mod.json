@@ -1,0 +1,9 @@
+{
+  "id": "basic_mod",
+  "name": "Basic Mod Template",
+  "version": "1.0.0",
+  "description": "A starting point for Clueland mods.",
+  "author": "SDK",
+  "entry_point": "scripts/init.lua",
+  "sdk_version": 1
+}

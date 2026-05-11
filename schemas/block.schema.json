@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Block Definition",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The unique identifier for the block (e.g., 'mymod:ruby_ore')."
+    },
+    "opaque": {
+      "type": "boolean",
+      "description": "Whether the block is fully opaque and occludes neighbors."
+    },
+    "model": {
+      "type": "string",
+      "description": "Path to the model JSON file."
+    },
+    "textures": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      },
+      "description": "Map of face names to texture names."
+    },
+    "light_emission": {
+      "type": "object",
+      "properties": {
+        "r": { "type": "integer", "minimum": 0, "maximum": 15 },
+        "g": { "type": "integer", "minimum": 0, "maximum": 15 },
+        "b": { "type": "integer", "minimum": 0, "maximum": 15 }
+      }
+    }
+  },
+  "required": ["name"]
+}

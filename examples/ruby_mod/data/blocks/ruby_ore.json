@@ -1,0 +1,13 @@
+{
+  "name": "ruby_mod:ruby_ore",
+  "opaque": true,
+  "model": "block/cube_all",
+  "textures": {
+    "all": "ruby_mod:ruby_ore"
+  },
+  "light_emission": {
+    "r": 5,
+    "g": 0,
+    "b": 0
+  }
+}

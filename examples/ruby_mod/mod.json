@@ -1,0 +1,9 @@
+{
+  "id": "ruby_mod",
+  "name": "Ruby Ore & Tools",
+  "version": "1.0.0",
+  "description": "Adds ruby ore and basic ruby items to the game.",
+  "author": "Clueland Team",
+  "entry_point": "scripts/init.lua",
+  "sdk_version": 1
+}

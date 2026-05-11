@@ -1,0 +1,20 @@
+{
+  "Lua.workspace.library": [
+    "./typings"
+  ],
+  "Lua.runtime.version": "LuaJIT",
+  "Lua.diagnostics.globals": [
+    "engine",
+    "events",
+    "world",
+    "player"
+  ],
+  "json.schemas": [
+    {
+      "fileMatch": [
+        "**/data/blocks/*.json"
+      ],
+      "url": "./sdk/schemas/block.schema.json"
+    }
+  ]
+}
