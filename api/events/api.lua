@@ -1,12 +1,9 @@
 ---@class Events
-events = {}
+events = events or {}
 
----Registers a callback for a specific event.
----@param name string
+---Subscribes to an engine event.
+---@param event_name "tick" | "block_break" | "block_place"
 ---@param callback function
-function events.on(name, callback) end
-
----Triggers an event manually.
----@param name string
----@param ... any
-function events.trigger(name, ...) end
+function events.on(event_name, callback)
+    native.events.on(event_name, callback)
+end

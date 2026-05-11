@@ -9,9 +9,11 @@ engine.register_block({
     textures = { all = "ruby_mod:ruby_block" }
 })
 
-events.on("on_block_break", function(x, y, z, block_name)
+events.on("block_break", function(data)
+    local block_name = engine.get_block_name(data.block_id)
     if block_name == "ruby_mod:ruby_ore" then
-        engine.log("A rare ruby was discovered at " .. x .. ", " .. y .. ", " .. z)
+        engine.log("A rare ruby was discovered at " .. data.x .. ", " .. data.y .. ", " .. data.z)
         -- In a real mod, we might drop an item here
     end
 end)
+
